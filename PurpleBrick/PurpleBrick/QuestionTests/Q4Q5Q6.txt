@@ -1,0 +1,48 @@
+﻿Q4. What are tools used in API automation testing?
+
+Rest-Assured
+JMeter
+Karate DSL
+Http Master 
+SoapUI
+TestingWhiz
+SOATest
+TestMaker
+Postman
+
+
+Q5 Write the steps involved in creating a test API client for Web APIs in C#?
+
+Create a new project from Visual Studio for values not from DB
+Select Web under the Visual C# template, select ASP.Net Web Application 
+in the list, name the project and press Ok Select Web API or Empty, set
+the checkbox of Web API to checked and press Ok in the New ASP.NET Project dialog.
+Then the project is created with  folders[e.g Controllers,Model] are created by default. 
+Create class within the Model that represent the data of the application. Also
+create a test controller (that handles HTTP requests)within any folder e.g
+Controllers folder via Add > Controller > Web API 2 Controller – Empty > Press Add and name it. 
+The controller test created and inherit the Apicontroller, then you can perform the HTTP request actions e.g for Get,Post,PUT,DELETE by getting the response code
+
+-	Create a new project from Visual Studio for values from DB
+-	Select "Visual C#" under "Installed - Templates" then select  ASP.NET Web Application and name[e.g ProjectService] the application and press OK
+-	Select "Web API"  on the next journey and click "OK" then the Web API has been created
+-	Adding ADO.NET Entity Data Model to retrieve data via the Right click the first project and select Add > New Project  > Visual C# > Class Library and name it[e.g ProjectData].
+-	Also Right click on the new created project and with these journeys Add New Item > Data > ADO.NET Entity Data Model >then name it [e.g ProjectDataModel] > click Add . 
+-	On the Entity Data Model Wizard, select "EF Designer from database" option and click next 
+-	On the next screen, click "New Connection" button 
+-	Then click on Next to choose version of Entity Framework and click next.It will now connect to the SQL server and Entity Data Model Wizard displayed,then select the table and press finish
+    Using the Entity Data Model in e.g ProjectService project by Right click on the refrences folder > select Add Refrence > Refrence Manager> select e.g ProjectData and click OK 
+-	Then adding Web API Contoller into project [e.g ProjectService] by Right click g Controllers folder via Add > Controller > Web API 2 Controller – Empty > Press Add and name it.Build the solution.Adding the necessary refrences to the controller e.g using ProjectData
+-	Perform the HTTP request actions e.g for Get,Post,PUT,DELETE 
+
+
+
+
+
+Q6 What are challenges in Web API testing?
+The first and foremost challenge is selecting an appropriate parameter and then its combination.
+Parameter categorization
+Proper sequencing of call is required as this may lead to inadequate coverage in testing.
+Output verification and validation
+Another important challenge is providing input values, which is very difficult as GUI is not available in this case.
+
