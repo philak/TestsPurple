@@ -18,6 +18,7 @@ namespace PurpleBrick.Section1Linq
             TotalThreeSalaryPaidByCompany();
             MaximumPaid();
             IncreasmentEveryMonthAndFebPaid(2000);
+            //////
         }
 
 
